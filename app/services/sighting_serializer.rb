@@ -17,6 +17,7 @@ class SightingSerializer
       },
       except: [:updated_at],
     }
+    #note we are passing in the options hash here instead of passing in the whole hash
     @sighting.to_json(options)
   end
 
